@@ -433,6 +433,15 @@ function mostrarSubsecao(id) {
  });
  document.getElementById(id).style.display = "block";
 }
+function mostrarSubsecao1(id) {
+
+
+ document.querySelectorAll(".subsecoes1").forEach(function(secao){
+  secao.style.display = "none";
+
+ });
+ document.getElementById(id).style.display = "block";
+}
 
 
 const produto4 = [
