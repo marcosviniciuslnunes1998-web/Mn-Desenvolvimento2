@@ -1,0 +1,24 @@
+# Clone da Domino's Pizza
+
+Projeto desenvolvido com HTML, CSS e JavaScript puro.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Funcionalidades
+
+- Carrinho de compras
+- Modais de produtos
+- Controle de quantidade
+- Remoção de itens
+- Cálculo automático do total
+
+## Próximas melhorias
+
+- Responsividade
+- LocalStorage
+- Integração com API
+- React
