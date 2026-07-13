@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="stylea.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+ <div class="caixa-0"><h1><img class="linkar0" src = "domino.svg" alt="Dominos" width="200" height="200"></h1>
+<button class="linkar1 menu-item ativo" onclick="mostrarSecao('home',this)" >Home </button>
+<button class="linkar1 menu-item" onclick="mostrarSecao('menu',this)" >Menu</button>
+<button class="linkar1 menu-item" onclick="mostrarSecao('promoçoes',this)">Promoções</button>
+
+  <button class ="linkar2"onclick="abrirModal()">Acompanhar pedidos</button>
+    <button class="linkar3" onclick="abrirModal()">Login ou Cadastre-se </button>
+    <button onclick="mostrarSecao('modal-carrinho',this)" class="linkar4" href="carrinho"><img src ="carrinho.svg" alt="caixa de pizza " width="30" height="30"></button></div>
+    <div class="caixa-1"> <label onclick="abrirModal()">Selecione a Localização</label>
+        <select id="base">
+            <option>Armação dos Búzios</option>
+            <option>Cabo Frio</option>
+            <option>São Pedro d'Aldeia</option>
+            <option>Rio de Janeiro</option>
+        </select></div>
+ <div id="home" class="secao">
+<div  class="carrosel">
+            <div class="slides">
+            <a href="fundofinal.html"> <img src="fundofinal.webp" width="1300" height="600">    </a>
+
+<a href="fundo.html"><img src="Fundo 1.webp" alt="fundo1" width="1300"height="600" ></a>
+</div></div>
+<div class="caixa-2">
+<a> <img src ="FUNDOEMB.webp" width="350" height="350">       </a>
+<a> <img src="fundoemb1.webp"  width="350"height="350" ></a>
+<a> <img src ="fundoemb2.webp" width ="350"height="350"></a>
+
+</div>
+<a class="fundofinal"><img src="fundofinal.webp" width="1130" height="400"></a></div>
+<div id="menu" class="secao" >
+    
+        <div class="categorias-container">
+            <button class="setaq" onclick="rolarEsquerda()"> <img src="botaoesquerdo.svg">
+        
+    </button>
+ 
+            <div class="categorias" id="categorias">
+                
+            
+           <button  class="linkar10 menu-item1 ativo1" onclick="mostrarSecao1('Novidades',this)"><img  src="novi1.svg"  > Novidades</button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Pizzas',this)" ><img  src="pizz.svg"   > Pizzas </button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Acompanhamentos',this)"><img src="acomp.svg"> Acompanhamentos </button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Lasanhas',this)"> <img  src="lasanha.svg"> Lasanhas</buttton>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Calzone',this)"> <img src="calzone.svg"> Calzone</button>    
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Molho',this)"> <img src="molho.svg" > Molhos</button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Sand',this)"> <img src="sand.svg" > Sandúiches</button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Sobremesas',this)"><img  src="sobre.svg" > Sobremesas</button>
+            <button class="linkar10 menu-item1" onclick="mostrarSecao1('Bebidas',this)"> <img  src="bebidas.svg"> Bebidas</button>
+            </div>
+             <button class="setaq" onclick="rolarDireita()">
+                <img src="botaodireito.svg" >
+        
+    </button>
+            </div>
+             <div id="Novidades" class="secao1">
+            <div class="caixa-10">
+                <div class="linkar11"><div class="card0"><img src="canadense.webp"width="120" height="140">  <div class="cardtext0"> <h3 class="h3-1">Canadense</h3>
+                <p class="p-2">Queijo, presunto, bacon, champignon, molho thai sweet chili e orégano.</p><button class="linkar13" onclick="abrirProduto0(1)">Ver Preço</button></div></div>
+                <div class="card0"> <img src="americano.webp" width="120" height="140">  <div class="cardtext0"> <h3 class="h3-1"> Americano</h3>
+                    <p class="p-2">Queijo, requeijão, pepperoni, bacon, molho americano e azeite.</p>
+                <button class="linkar13" onclick="abrirProduto0(2)">Ver Preço</button></div></div>
+                <div class="card0"> <img src="mexicana.webp" width="120"height="140">  <div class="cardtext0"> <h3 class="h3-1" >Mexicana</h3>
+                    <p class="p-2">Queijo, carne seca, milho, cebola, pimentão, molho sabor queijo cheddar, condimento mexicano e</p>
+                <button class="linkar13" onclick="abrirProduto(25)">Ver Preço</button></div> </div>
+                <div class="card0" > <img src="molhoamer.webp" width="120" height="140">  <div class="cardtext0"> <h3 class="h3-1">Molho americano</h3>
+                    <p class="p-2">Molho à base de maionese sabor picles.</p>
+                
+                <button class="linkar13" onclick="abrirProduto0(3)">Ver Preço</button></div></div></div>
+                <div class="linkar12">
+                    <div class="card0" ><img src="mexic.webp" width="120" height ="140">  <div class="cardtext0"> <h3 class="h3-1">Mexicano</h3>
+                    <p class="p-2">Queijo, cream cheese, carne seca, milho, cebola, pimentão, molho sabor queijo cheddar, condiment...</p><button class="linkar13" onclick="abrirProduto0(4)">Ver Preço</button></div></div>
+                    <div class="card0"> <img src="canada.webp" width ="120" height="140">  <div class="cardtext0"> <h3 class="h3-1">Canadense</h3> 
+                    <p class="p-2">Queijo, presunto, bacon, champignon, molho thai sweet chili e orégano.</p><button class="linkar13" onclick="abrirProduto(18)">Ver Preço</button></div></div>
+                    <div class="card0"> <img src ="ameri.webp" width="120" height="140"> <div class="cardtext0"> <h3 class="h3-1">Americana</h3>
+                        <p class="p-2">Queijo, pepperoni, bacon, molho americano e orégano.</p>
+                    <button class="linkar13" onclick="abrirProduto(19)">Ver Preço</button></div></div></div>
+                    </div>
+                </div>
+                <div id="Pizzas" class="secao1"> 
+                    <div class="caixa-14">
+                     <div><h2 class="h2-1">Meio a Meio</h2>
+                     <p class="p-1">Peça sua pizza meio a meio com os sabores do nosso cardápio.</p>
+                     <button class="linkar20">Ver preço</button></div>
+                     <div> <img src="Meioameio.svg" width="100" height="100"></div>   
+                    </div>
+
+               
+                <h1 class="h1-1"> Mais Pedidas</h1>
+                  <div class="caixa-15"> 
+                    <div class="linkar21">
+                        <div class="card1"><img src="pizza1.webp" width="120" height="140"> <div class="cardtex1">
+                            <h3 class="h3-1"> Queijo e Milho</h3> 
+
+                            <p class="p-2"> Queijo,Milho e Orégano.</p><button class="linkar13" onclick="abrirProduto(26)">Ver Preço</button>
+                        </div> </div>
+                        <div class="card1"><img src="pizza2.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Queijo</h3>
+                            <p class="p-2"> Queijo e Orégano.</p><button class="linkar13" onclick="abrirProduto(27)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"><img src="pizza3.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Calabresa</h3>
+                            <p class="p-2">Queijo, calabresa e cebola, orégano.</p><button class="linkar13" onclick="abrirProduto(28)">Ver Preço</button>
+                        </div></div> 
+                        <div class="card1"><img src="pizza4.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Frango com Requeijão Especial</h3>
+                            <p class="p-2">Frango desfiado, cebola, orégano e requeijão</p><button class="linkar13" onclick="abrirProduto(29)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"> <img src="montesua.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Monte a Sua</h3>
+                            <p class="p-2">Monte sua pizza com todos os toppings que você deseja</p><button class="linkar13" onclick="abrirProduto(30)">Ver Preço</button>
+                        </div></div>
+                        </div>
+                        <div class="linkar22">
+                        <div class="card1"> <img src="pizza6.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Queijo Cremoso</h3>
+                            <p class="p-2">Queijo, creme culinário e orégano.</p><button class="linkar13" onclick="abrirProduto(31)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"> <img src="pizza7.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Margherita</h3>
+                            <p class="p-2">Queijo, tomate, orégano e manjericão.</p><button class="linkar13" onclick="abrirProduto(32)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"> <img src="pizza8.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Pepperoni</h3>
+                    <p class="p-2">Queijo, orégano e pepperoni.</p><button class="linkar13" onclick="abrirProduto(33)">Ver Preço</button> </div></div>
+                    <div class="card1"> <img src="pizza9.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1"> 3 Queijos</h3>
+                            <p class="p-2" >Queijo, requeijão, orégano e parmesão ralado.</p><button class="linkar13" onclick="abrirProduto(34)">Ver Preço</button>
+                    </div></div>
+                    <div class="card1"><img src="pizza10.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Calabresa Defumada</h3>
+                        <p class="p-2">queijo, calabresa defumada em cubos, cebola e orégano.</p><button class="linkar13" onclick="abrirProduto(35)">Ver Preço</button>
+                    </div></div>
+                    </div>
+                    </div>
+                    <h1 class="h1-1">Clássicas</h1>
+                    <div class="caixa16">
+                        <div class="linkar23">
+                        <div class="card1"><img src="pizza11.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Duo Calabresa</h3>
+                            <p class="p-2">queijo, calabresa, calabresa defumada em cubos e orégano.</p>
+                            <button class="linkar13" onclick="abrirProduto(1)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"><img src="pizza12.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Corn & Bacon</h3>
+                            <p class="p-2">Queijo,Bacon,Orégano e Milho.</p>
+                            <button class="linkar13" onclick="abrirProduto(2)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"> <img src="pizza13.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">4 Queijos</h3>
+                            <p class="p-2">Queijo, requeijão, gorgonzola, orégano e parmesão ralado.</p>
+                            <button class="linkar13" onclick="abrirProduto(3)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"><img src="pizza14.webp" width="120" height="120"><div class="cardtext1">
+                            <h3 class="h3-1">Pão de Alho</h3>
+                            <p class="p-2">Queijo, pão ciabatta, pasta de alho, parmesão ralado e orégano.</p>
+                            <button class="linkar13" onclick="abrirProduto(4)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"><img src="pizza15.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Veggie®</h3>
+                            <p class="p-2">Queijo, champignon, azeitona preta, cebola, orégano e pimentão verde</p>
+                            <button class="linkar13" onclick="abrirProduto(5)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"><img src="pizza16.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Cheddar e Pepperoni</h3>
+                            <p class="p-2">Queijo, molho sabor queijo cheddar, pepperoni e orégano.</p>
+                            <button class="linkar13" onclick="abrirProduto(6)">Ver Preço</button>
+
+                        </div></div></div>
+                
+                        <div class="linkar24">
+                            <div class="card1"><img src="pizza17.webp" width="120" height="140"><div class="cardtext1">
+                                    <h3 class="h3-1">Frango & Bacon</h3>
+                                    <p class="p-2">Frango desfiado, bacon, tomate, requeijão e orégano.</p>
+                                    <button class="linkar13" onclick="abrirProduto(7)">Ver Preço</button>
+
+                            </div></div>
+                            <div class="card1"><img src="pizza18.webp" width="120" height="140"><div class="cardtext1">
+                                <h3 class="p-2">Napolitana</h3>
+                                <p class="p-2">Queijo, tomate, orégano e parmesão ralado.</p>
+                                <button class="linkar13" onclick="abrirProduto(8)">Ver Preço</button>
+
+                            </div></div>
+                            <div class="card1"><img src="pizza19.webp" width="120" height="120" ><div class="cardtext1">
+                                <h3 class="h3-1">Catuperoni</h3>
+                                <p class="p-2">Queijo, pepperoni, requeijão, orégano e parmesão ralado.</p>
+                                <button class="linkar13" onclick="abrirProduto(9)">Ver Preço</button>
+                            </div></div>
+                            <div class="card1"><img src="pizza20.webp" width="120" height="140"><div class="cardtext1">
+                                <h3 class="h3-1">Frango Caipira</h3>
+                                <p class="p-2">Queijo, frango desfiado, milho, catupiry e orégano.</p>
+                                <button class="linkar13" onclick="abrirProduto(10)">Ver Preço</button>
+
+                            </div></div>
+                            <div class="card1"><img src="pizza21.webp" width="120" height="140"><div class="cardtext1">
+                                <h3 class="h3-1">Portuguesa</h3>
+                                <p class="p-2">Queijo, presunto, ovo de codorna, azeitona preta, cebola, orégano e pimentão verde.</p>
+                                 <button class="linkar13" onclick="abrirProduto(11)">Ver Preço</button>
+                                </div></div>
+                                <div class="card1"><img src="pizza22.webp" width="120" height="140"><div class="cardtext1">
+                                    <h3 class="h3-1">Cheddar & Bacon</h3>
+                                    <p class="p-2">Queijo, molho sabor queijo cheddar, bacon e orégano.</p>
+                                    <button class="linkar13" onclick="abrirProduto(12)">Ver Preço</button>
+                                </div></div></div>
+                                 </div>
+                                <h1 class="h1-1">Especiais</h1>
+                                <div class="caixa17">
+                                    <div class="linkar25">
+                                        <div class="card1"><img src="pizzae1.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">Frango com Cream Cheese</h3>
+                                            <p class="p-2">Queijo, frango desfiado, Cream Cheese, orégano e parmesão ralado.</p>
+                                             <button class="linkar13" onclick="abrirProduto(13)">Ver Preço</button>
+                                        </div></div>
+                                    <div class="card1"><img src="pizzae2.webp" width="120" height="140"><div class="cardtext1">
+                                     <h3 class="h3-1">Carne Seca Com Cream Cheese</h3>
+                                     <p class="p-2">Queijo, cebola, carne seca desfiada, cream cheese e orégano.</p> 
+                                     <button class="linkar13"  onclick="abrirProduto(14)">Ver Preço</button>
+
+                                    </div></div>
+                                    <div class="card1"><img src="pizzae3.webp" width="120" height="140"><div class="cardtext1">
+                                        <h3 class="h3-1">Pepperrock</h3>
+                                        <p class="p-2">Queijo, pepperoni, azeitona preta, parmesão ralado, orégano, alho granulado e cream cheese.</p>
+                                         <button class="linkar13"  onclick="abrirProduto(15)">Ver Preço</button>
+
+                                    </div></div>
+                                    <div class="card1"><img src="pizzae4.webp" width="120" height="140"><div class="cardtext1">
+                                        <h3 class="h3-1">Frango Grelhado</h3>
+                                        <p class="p-2">Queijo, frango, requeijão, tomate, azeitona preta, orégano e manjericão.</p>
+                                         <button class="linkar13"  onclick="abrirProduto(16)">Ver Preço</button>
+                    
+                                    </div></div>
+                                    <div class="card1"><img src="pizzae5.webp" width="120" height="140"><div class="cardtext1">
+                                        <h3 class="h3-1">Extravaganzza®</h3>
+                                        <p class="p-2">Queijo, pepperoni, presunto, azeitona preta, champignon, cebola, orégano e pimentão verde.</p>
+                                         <button class="linkar13"  onclick="abrirProduto(17)">Ver Preço</button>
+                                    </div></div>
+                                    <div class="card1"><img src="pizzae6.webp" width="120" height="140"><div class="cardtext1">
+                                        <h3 class="h3-1">Canadense</h3>
+                                        <p class="p-2">Queijo, presunto, bacon, champignon, molho thai sweet chili e orégano.</p>
+                                        <button class="linkar13"  onclick="abrirProduto(18)">Ver Preço</button>
+                                    </div></div>
+                                    <div class="card1"><img src="pizzae7.webp" width="120" height="140"><div class="cardtext1">
+                                        <h3 class="h3-1">Americana</h3>
+                                        <p class="p-2">Queijo, pepperoni, bacon, molho americano e orégano.</p>
+                                         <button class="linkar13"  onclick="abrirProduto(19)">Ver Preço</button>
+                                    </div></div></div>
+                                    <div class="linkar26">
+                                        <div class="card1"><img src="pizzae8.webp" width="120" height="140"><div class="cartext1">
+                                            <h3 class="h3-1">Calabresa Especial</h3>
+                                            <p class="p-2"> Queijo, azeitona preta, calabresa, cebola, orégano e cream cheese.</p>
+                                            <button class="linkar13"  onclick="abrirProduto(20)">Ver Preço</button>
+                                        </div></div>
+                                        <div class="card1"><img src="pizzae9.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">Egg & Bacon</h3>
+                                            <p class="p-2">Queijo, bacon, cebola, cream cheese, orégano e ovo de codorna.</p>
+                                             <button class="linkar13"  onclick="abrirProduto(21)">Ver Preço</button>
+                                        </div></div>
+                                        <div class="card1"> <img src="pizzae10.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">La Bianca</h3>
+                                            <p class="p-2">Queijo, queijo de búfala e vaca, requeijão, parmesão ralado, orégano e manjericão.</p>
+                                            <button class="linkar13"  onclick="abrirProduto(22)">Ver Preço</button>
+                                        </div></div>
+                                        <div class="card1"> <img src="pizzae11.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">Meat & Bacon</h3>
+                                            <p class="p-2">Queijo, bacon, calabresa, pepperoni, orégano e presunto.</p>
+                                            <button class="linkar13"  onclick="abrirProduto(23)">Ver Preço</button>
+                                        </div></div>
+                                        <div class="card1"> <img src="pizzae12.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">Calabresa Fest</h3>
+                                            <p class="p-2">queijo, calabresa, calabresa defumada em cubos, queijo parmesão, molho sabor queijo cheddar e orégano...</p>
+                                            <button class="linkar13"  onclick="abrirProduto(24)">Ver Preço</button>
+                                        </div></div>
+                                        <div class="card1"><img src="pizzae13.webp" width="120" height="140"><div class="cardtext1">
+                                            <h3 class="h3-1">Mexicana</h3>
+                                            <p class="p-2"> Queijo, carne seca, milho, cebola, pimentão, molho sabor queijo cheddar, condimento mexicano e...</p>
+                                            <button class="linkar13"  onclick="abrirProduto(25)">Ver Preço</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                                      </div>
+            <div id="Acompanhamentos" class="secao1">
+            <div class="caixa18">
+                <div class="linkar27">
+                    <div class="card1"><img src="acomp1.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Cheedar Volcano</h3>
+                        <p class="p-2">Queijo e molho sabor queijo cheddar.</p>
+                         <button class="linkar13" onclick="abrirProduto0(5)">Ver Preço</button>
+                    </div></div>
+                    <div class="card1"><img src="acomp2.webp" width ="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Alho Roll - 8 und.</h3>
+                        <p class="h3-1">Entrada crocante com 8 unidades, feita de massa pan, recheada de alho e parmesão.</p>
+                        <button class="linkar13" onclick="abrirProduto0(6)">Ver Preço</button>
+                    </div></div>
+                    <div class="card1"><img src="acomp3.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Chicken Roll - 8 und.</h3>
+                        <p class="p-2">Entrada crocante com 8 unidades, feita de massa pan, recheada de frango desfiado, queijo e molho de...</p>
+                        <button class="linkar13" onclick="abrirProduto0(7)">Ver Preço</button>
+                        
+                    </div></div>
+                    <div class="card1"> <img src="acom8.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1"> Calabresa Roll - 8 und.</h3>
+                        <p class="p-2">Entrada crocante com 8 unidades, feita de massa pan, recheadas de calabresa defumada em cubos,...</p>
+                        <button class="linkar13" onclick="abrirProduto0(8)">Ver Preço</button>
+                    </div></div>
+                    <div class="card1"><img src="acomp5.webp" width="120" height="140"><div class="cardtext1">
+                        <h3 class="h3-1">Cheesebread 4 Queijos</h3>
+                        <p class="p-2">Queijo, gorgonzola, parmesão ralado, requeijão e azeite.</p>
+                        <button class="linkar13" onclick="abrirProduto0(9)">Ver Preço</button>
+                    </div></div></div>
+                    <div class="linkar28">
+                        <div class="card1"><img src="acomp2.webp" width="120" heigth="140"><div class="cardtext1">
+                            <h3 class="h3-1">Alho Roll - 4 und.</h3>
+                            <p class="p-2">Entrada crocante com 4 unidades, feita de massa pan, recheada de alho e parmesão.</p>
+                            <button class="linkar13" onclick="abrirProduto0(10)">Ver Preço</button>
+
+                        </div></div>
+                        <div class="card1"><img src="acomp3.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Chicken Roll - 4 und.</h3>
+                            <p class="p-2">Entrada crocante com 4 unidades, feita de massa pan, recheada de frango desfiado, queijo e molho de...</p>
+                            <button class="linkar13" onclick="abrirProduto0(11)">Ver Preço</button>
+
+                        </div></div>
+                        <div class="card1"><img src="acom8.webp" witdh="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Calabresa Roll - 4 und.</h3>
+                            <p class="p-2">Entrada crocante com 4 unidades, feita de massa pan, recheadas de calabresa defumada em cubos,...</p>
+                             <button class="linkar13" onclick="abrirProduto0(12)">Ver Preço</button>
+                        </div></div>
+                        <div class="card1"> <img src="acomp6.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1"> Cheesebread Calabresa</h3>
+                            <p class="p-2">Queijo, calabresa, cebola, parmesão ralado, requeijão e azeite.</p>
+                            <button class="linkar13" onclick="abrirProduto0(13)">Ver Preço</button>
+
+
+                        </div></div>
+                        <div class="card1"><img src="acomp7.webp" width="120" height="140"><div class="cardtext1">
+                            <h3 class="h3-1">Cheesebread Margherita</h3>
+                            <p class="p-2">Queijo, tomate, requeijão, parmesão ralado, azeite e manjericão.</p>
+                            <button class="linkar13" onclick="abrirProduto0(14)">Ver Preço</button>
+                            
+                        </div></div>
+
+                    </div>
+                
+                </div>
+      </div>         
+      <div id="Lasanhas" class="secao1">
+       <div class="caixa19">
+        <div class="linkar29">
+        <div class="card1"><img src="lasanha1.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">3 Queijos</h3>
+            <p class="p-2">Lasanha recheada de queijo, parmesão ralado, requeijão, creme culinário e finalizada com orégan...</p>
+            <button class="linkar13" onclick="abrirProduto0(15)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="lasanha2.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Queijo & Presunto</h3>
+            <p class="p-2">Lasanha recheada de queijo, presunto, molho de tomate, creme culinário e finalizada com orégano...</p>
+            <button class="linkar13" onclick="abrirProduto0(16)">Ver Preço</button>
+        </div></div>
+    </div>
+    <div class="linkar30">
+    <div class="card1"><img src="lasanha3.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Frango & Bacon</h3>
+        <p class="p-2">Lasanha recheada de queijo, frango desfiado, bacon em cubos, molho de tomate, creme culinário...</p>
+        <button class="linkar13" onclick="abrirProduto0(17)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="lasanha4.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Calabresa</h3>
+        <p class="p-2">Lasanha recheada de queijo, calabresa, calabresa defumada em cubos, cebola, molho de tomate, molho...</p>
+         <button class="linkar13" onclick="abrirProduto0(18)">Ver Preço</button>
+    </div>
+    </div>
+</div>
+        </div>
+        </div>
+        <div id="Calzone" class="secao1">
+        <div class="caixa20">
+        <div class="linkar31">
+            <div class="card1"><img src="calzone1.webp" width="120" height="140"><div class="cardtext1">
+                <h3 class="h3-1">Queijo & Presunto</h3>
+                <p class="p-2">Calzone com deliciosa massa recheada de queijo, parmesão ralado, presunto e azeite.</p>
+                 <button class="linkar13" onclick="abrirProduto0(19)">Ver Preço</button>
+            </div></div>
+            <div class="card1"><img src="calzone2.webp" width="120" height="140"><div class="cardtext1">
+                <h3 class="h3-1">3 Queijos</h3>
+                <p class="p-2">Calzone com deliciosa massa recheada de queijo, parmesão ralado, requeijão e azeite.</p>
+                <button class="linkar13" onclick="abrirProduto0(20)">Ver Preço</button>
+            </div></div>
+            <div class="card1"><img src="calzone3.webp" width="120" height="140"><div class="cardtext1">
+                <h3 class="h3-1">Calabresa</h3>
+                <p class="p-2">Calzone com deliciosa massa recheada de queijo, requeijão, cebola, calabresa defumada em cubos e parmesão...</p>
+                <button class="linkar13" onclick="abrirProduto0(21)">Ver Preço</button>
+
+            </div></div></div>
+            <div class="linkar32">
+                <div class="card1"><img src="calzone4.webp" width="120" height="140"><div class="cardtext1">
+                    <h3 class="h3-1">Margherita</h3>
+                    <p class="p-2">Calzone com deliciosa massa recheada de queijo, parmesão ralado, requeijão, tomate, manjericão e...</p>
+                    <button class="linkar13" onclick="abrirProduto0(22)">Ver Preço</button>
+                </div></div>
+                <div class="card1"><img src="calzone5.webp" width="120" height="140"><div class="cardtext1">
+                    <h3 class="h3-1">Frango com Requeijão</h3>
+                    <p class="p-2">Calzone com deliciosa massa recheada de queijo, parmesão ralado, requeijão, frango desfiado e...</p>
+                <button class="linkar13" onclick="abrirProduto0(23)">Ver Preço</button>
+                </div></div>
+            </div>
+
+
+
+        </div>
+
+        </div>
+
+ <div id="Molho" class="secao1">
+<div class="caixa21" >
+<div class="linkar33">
+    <div class="card1"><img src="molho1.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Nutella®</h3>
+        <p class="p-2">Creme de avelã Nutella®.</p>
+        <button class="linkar13" onclick="abrirProduto0(24)">Ver Preço</button>
+
+    </div></div>
+    <div class="card1"><img src="molho2.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Maionese Grill</h3>
+        <p class="p-2">Maionese temperada, perfeita para conferir aquele toque grelhado aos nossos produtos.</p>
+        <button class="linkar13" onclick="abrirProduto0(25)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="molho3.webp"width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Molho Chipotle</h3>
+        <p class="p-2">Molho à base de maionese sabor chipotle levemente picante.</p>
+        <button class="linkar13" onclick="abrirProduto0(26)">Ver Preço</button>
+
+    </div></div>
+    <div class="card1"><img src="molho4.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pasta de Alho</h3>
+        <p class="p-2">Irresistível e aromática, combina o sabor marcante do alho com um toque de cremosidade.</p>
+        <button class="linkar13" onclick= "abrirProduto0(27)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="molho5.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Chocolate</h3>
+        <p class="p-2">Sabor inconfundivelmente doce com toque intenso e cremoso do brigadeiro.</p>
+        <button class="linkar13" onclick="abrirProduto0(28)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="molho6.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">OvomaltineⓇ</h3>
+        <p class="p-2">Creme crocante da conceituada marca OvomaltineⓇ, com extrato de malte, cacau e avelã.</p>
+        <button class="linkar13" onclick="abrirProduto0(29)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="molho7.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Creme de Goiabada</h3>
+        <p class="p-2">Goiabada cremosa com sabor doce e irresistível.</p>
+        <button class="linkar13" onclick="abrirProduto0(30)">Ver Preço</button>
+    </div></div>
+    </div>
+    <div class="linkar34">
+<div class="card1"><img src="molho8.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Molho sabor Queijo Cheedar</h3>
+    <p class="p-2">Nosso queijo do tipo “melt” traz cor e sabor intensos e marcantes.</p>
+    <button class="linkar13" onclick="abrirProduto0(31)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="molho9.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">CatupiryⓇ</h3>
+    <p class="p-2">Requeijão cremoso da tradicional marca CatupiryⓇ Original, de sabor delicado e inconfundível.</p>
+    <button class="linkar13" onclick="abrirProduto0(32)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="molho10.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Cream Cheese</h3>
+    <p class="h3-1">Queijo cremoso, levemente ácido e com um toque de doçura, traz suavidade ao paladar.</p>
+    <button class="linkar13" onclick="abrirProduto0(33)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="molho11.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Molho de Tomate</h3>
+    <p class="p-2">Receita exclusiva da Domino’s, feita com tomates frescos e selecionados, de toque levemente adocicado...</p>
+    <button class="linkar13" onclick="abrirProduto0(34)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="molho12.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Doce de Leite</h3>
+    <p class="p-2">A combinação perfeita entre a doçura suave do leite condensado e o sabor caramelizado do doce de leite com textura aveludada que derrete na boca.</p>
+     <button class="linkar13" onclick="abrirProduto0(35)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="molho13.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Molho Americano</h3>
+    <p class="p-2">Molho à base de maionese sabor picles.</p>
+    <button class="linkar13" onclick="abrirProduto0(36)">Ver Preço</button>
+</div></div>
+</div>
+</div>
+
+</div>
+<div id="Sand" class="secao1">
+<div class="caixa22">
+    <div class="linkar34">
+        <div class="card1"><img src="sand1.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Caprese</h3>
+            <p class="p-2">Queijo de búfala e vaca, cebola, tomate, azeitona preta, manjericão e azeite.</p>
+            <button class="linkar13" onclick="abrirProduto0(37)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand2.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Carne Seca</h3>
+            <p class="p-2">Cream cheese, carne seca, cebola, queijo e azeite.</p>
+             <button class="linkar13" onclick="abrirProduto0(38)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand3.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Meat & Bacon</h3>
+            <p class="p-2">Cream cheese, pepperoni, presunto, calabresa, bacon e azeite.</p>
+             <button class="linkar13" onclick="abrirProduto0(39)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand4.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Calabresa</h3>
+            <p class="p-2">Sanduíche com queijo, queijo parmesão, calabresa defumada em cubos, calabresa e cebola.</p>
+             <button class="linkar13" onclick="abrirProduto0(40)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand5.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Mexicano</h3>
+            <p class="p-2">Queijo, cream cheese, carne seca, milho, cebola, pimentão, molho sabor queijo cheddar, condimento mexicano e azeite...</p>
+            <button class="linkar13" onclick="abrirProduto0(41)">Ver Preço</button>
+        </div></div></div>
+        <div class="linkar35">
+            <div class="card1"><img src="sand6.webp" width="120" height="140"><div class="cardtext1">
+         <h3 class="h3-1">Chicken & Bacon</h3>
+         <p class="p-2">Cream cheese, bacon, frango grelhado, tomate, cebola, parmesão e azeite.</p>
+            <button class="linkar13" onclick="abrirProduto0(42)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand7.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Frango com 4 queijos</h3>
+            <p class="p-2">Queijo, cream cheese, frango grelhado, gorgonzola, parmesão e azeite.</p>
+              <button class="linkar13" onclick="abrirProduto0(43)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand8.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Frango,Cheedar & Bacon</h3>
+            <p class="p-2">Queijo, molho sabor queijo cheddar, frango grelhado, bacon e azeite.</p>
+            <button class="linkar13" onclick="abrirProduto0(44)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand9.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Canadense</h3>
+            <p class="p-2">Queijo, requeijão, presunto, bacon, champignon, molho thai sweet chili e azeite.</p>
+            <button class="linkar13" onclick="abrirProduto0(45)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sand10.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Americano</h3>
+        <p class="p-2">Queijo, requeijão, pepperoni, bacon, molho americano e azeite.</p>
+        <button class="linkar13" onclick="abrirProduto0(46)">Ver Preço</button>
+        </div></div></div>
+
+</div>
+ 
+</div>
+<div id="Sobremesas" class="secao1">
+<div class="caixa23">
+    <div class="linkar36">
+        <div class="card1"><img src="sobre1.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Churrosbread</h3>
+            <p class="p-2">Nossa saborosa massa recheada de muito doce de leite, coberta de açúcar e canela.</p>
+            <button class="linkar13" onclick="abrirProduto0(47)">Ver Preço</button>
+        </div></div>
+        <div class="card1"><img src="sobre2.webp" width="120" height="140"><div class="cardtext1">
+            <h3 class="h3-1">Mini Churrosbread</h3>
+            <p class="p-2">Deliciosa massa recheada de muito doce de leite, coberta de açúcar e canela em versão individual.</p>
+            <button class="linkar13" onclick="abrirProduto0(48)">Ver Preço</button>
+        </div></div>
+<div class="card1"><img src="sobre3.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Pizza Romeu e Julieta</h3>
+    <p class="p-2">Pizza recheada de creme culinário, queijo, creme de goiabada e Catupiry® Original</p>
+    <button class="linkar13" onclick="abrirProduto(36)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre4.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Pizza de Nutella®</h3>
+    <p class="p-2">Pizza recheada de Nutella®.</p>
+    <button class="linkar13"onclick="abrirProduto(37)" >Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre5.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Pizza de CHurros</h3>
+    <p class="p-2">Pizza de doce de leite, coberta de açúcar e canela.</p>
+    <button class="linkar13" onclick="abrirProduto(38)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre6.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Pizza Doce de Leite</h3>
+    <p class="p-2">Pizza de doce de leite, coberta de doce de leite.</p>
+    <button class="linkar13" onclick="abrirProduto(39)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre7.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Romeu e Julieta Pan </h3>
+    <p class="p-2">Deliciosa massa pan, aerada e com flocos de manteiga, recheada de creme culinário, queijo, creme de goiabada e Catupiry® Original.</p>
+     <button class="linkar13" onclick="abrirProduto(40)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre8.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Nutella® Pan</h3>
+    <p class="p-2">Pizza recheada de Nutella®.</p>
+    <button class="linkar13" onclick="abrirProduto(41)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre9.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Choco Pan </h3>
+    <p class="p-2">Deliciosa massa pan, aerada e com flocos de manteiga, coberta de creme de baunilha, brigadeiro de chocolate e granulado.</p>
+    <button class="linkar13" onclick="abrirProduto(42)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre10.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Bites Nutella®</h3>
+    <p class="p-2">Deliciosa sobremesa crocante com 16 pedaços de massa pan, cobertos com Nutella®.</p>
+    <button class="linkar13" onclick="abrirProduto0(49)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="sobre11.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Canela Bites Ovomaltine</h3>
+    <p class="p-2">Deliciosa sobremesa crocante com 16 pedaços de massa pan, envoltos em açúcar e canela, e cobertos</p>
+    <button class="linkar13" onclick="abrirProduto0(50)">Ver Preço</button>
+</div></div></div>
+<div class="linkar37">
+    <div class="card1"><img src="sobre12.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Chocobread</h3>
+        <p class="p-2">Deliciosa massa recheada de muito brigadeiro de chocolate, coberta com creme de baunilha e granulado de chocolate.</p>
+        <button class="linkar13" onclick="abrirProduto0(51)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre13.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Mini Chocobread</h3>
+        <p class="p-2">Deliciosa massa recheada de muito brigadeiro de chocolate, coberta com creme de baunilha e granulado de chocolate em versão individual.</p>
+        <button class="linkar13" onclick="abrirProduto0(52)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre14.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pizza doce feita com biscoito Biscoff®</h3>
+        <p class="p-2">Pizza recheada de doce de leite e coberta com pedaços crocantes do biscoito Biscoff®.</p>
+        <button class="linkar13" onclick="abrirProduto(43)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre15.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pizza de M&Ms®</h3>
+        <p class="p-2">Pizza recheada com creme de baunilha, brigadeiro de chocolate e M&Ms®.</p>
+        <button class="linkar13" onclick="abrirProduto(44)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre16.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pizza de Ovomaltine®</h3>
+        <p class="p-2">Pizza de Ovomaltine® com creme de baunilha e coberta de Ovomaltine® crocante.</p>
+        <button class="linkar13" onclick="abrirProduto(45)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre17.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pizza de Brigadeiro</h3>
+        <p class="p-2">Pizza de brigadeiro com creme de baunilha, brigadeiro de chocolate e granulado.</p>
+        <button class="linkar13" onclick="abrirProduto(46)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre18.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Pizza Pan doce feita com biscoito Biscoff®</h3>
+        <p class="p-2">Pizza recheada de doce de leite e coberta com pedaços crocantes do biscoito Biscoff®.</p>
+        <button class="linkar13" onclick="abrirProduto(47)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="sobre19.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Churros Pan</h3>
+        <p class="p-2">Deliciosa massa pan, aerada e com flocos de manteiga, recheada de doce de leite, açúcar e canela.</p>
+        <button class="linkar13" onclick="abrirProduto(48)">Ver Preço</button>
+    </div></div>
+  <div class="card1"><img src="sobre20.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Pan Doce de Leite</h3>
+    <p class="p-2">Deliciosa massa pan, recheada com flocos de manteiga, recheada de doce de leite e açúcar.</p>
+    <button class="linkar13" onclick="abrirProduto(49)">Ver Preço</button>
+  </div></div>
+  <div class="card1"><img src="sobre21.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Canela Bites Doce de Leite</h3>
+    <p class="p-2">Deliciosa sobremesa crocante com 16 pedaços de massa pan, envoltos em açúcar e canela, e cobertos</p>
+    <button class="linkar13" onclick="abrirProduto0(53)" >Ver Preço</button>
+  </div></div>
+  <div class="card1"><img src="sobre22.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Canela Bites de Chocolate</h3>
+    <p class="p-2">Deliciosa sobremesa crocante com 16 pedaços de massa pan, envoltos em açúcar e canela, e cobertos</p>
+    <button class="linkar13" onclick="abrirProduto0(54)">Ver Preço</button>
+  </div></div></div>
+</div>
+</div>
+<div id="Bebidas" class="secao1">
+    <div class="caixa23">
+<div class="linkar38">
+<div class="card1"><img src="beb2.jpg" width="120" height="140"><div class="cardtext">
+    <h3 class="h3-1">Coca-Cola</h3>
+    <p class="p-2">Lata,600ml ou 2L.</p>
+    <button class="linkar13" onclick="abrirProduto1(1)">Ver Preço</button>
+</div></div>
+    <div class="card1"><img src="beb3.avif" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Fanta Guaraná</h3>
+        <p class="p-2">Lata ,600ml ou 2L.</p>
+        <button class="linkar13"  onclick="abrirProduto1(2)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="beb4.webp" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Fanta Laranja</h3>
+        <p class="p-2">Lata,600ml ou 2L.</p>
+        <button class="linkar13"  onclick="abrirProduto1(3)">Ver Preço</button>
+    </div></div>
+    <div class="card1"><img src="beb5.png" width="120" height="140"><div class="cardtext1">
+        <h3 class="h3-1">Fanta Uva</h3>
+        <p class="p-2">Lata.</p>
+        <button class="linkar13" onclick="abrirProduto2(1)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb6.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Água com Gás 350ml</h3>
+    <p class="p-2">Água Com Gás 350ml.</p>
+    <button class="linkar13" onclick="abrirProduto2(2)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb7.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Red Bull Melão</h3>
+    <p class="p-2">Lata 250ml.</p>
+    <button class="linkar13" onclick="abrirProduto2(3)">Ver Preço</button>
+</div></div>
+</div>
+<div class="linkar39">
+<div class="card1"><img src="beb8.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Coca-Cola Zero</h3>
+    <p class="p-2">Lata,600ml ou 2L.</p>
+    <button class="linkar13"  onclick="abrirProduto1(4)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb9.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Sprite</h3>
+    <p class="p-2">Lata,600ml ou 2L.</p>
+    <button class="linkar13"  onclick="abrirProduto1(5)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb10.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Água c/ Gás</h3>
+    <p class="p-2">500 Ml.</p>
+    <button class="linkar13" onclick="abrirProduto2(4)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb11.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Fanta Uva</h3>
+    <p class="p-2">2 Litros.</p>
+    <button class="linkar13" onclick="abrirProduto2(5)">Ver Preço</button>
+    </div></div>
+<div class="card1"><img src="beb12.webp" width="120" height="140"><div class="cardtext1">
+    <h3 class="h3-1">Amstel</h3>
+    <p class="p-2">Cerveja,Lata Ou Longneck</p>
+    <button class="linkar13" onclick="abrirProduto3(1)">Ver Preço</button>
+</div></div>
+<div class="card1"><img src="beb13.webp" width="120" height="140"><div class="cardtext1">
+    <h3 cass="h3-1">Red Bull Zero</h3>
+    <p class="p-2">Lata 250 ml.</p>
+    <button class="linkar13"onclick="abrirProduto2(6)">Ver Preço</button>
+</div></div></div>
+</div>
+</div>
+ 
+
+
+  
+
+
+  
+
+  <div id="modal-teste" class="modal-teste">
+   
+    
+
+  <div class="modal-content">
+
+    <button class="X-1" onclick="fechar()">X</button>
+
+
+    <img id="img" class="imgmodal2" width="120">
+
+    <div class="cardtext2"><h3 id="nome" class="cardtext3"></h3>
+
+    <p id="desc"></p></div>
+    <div class="caixa-30"> <label class="base0">Tamanho</label>
+        <select id="base1" class="base1">
+            <option>Brotinho - 4 fatias</option>
+            <option>Media - 8 fatias</option>
+            <option>Grande - 8 fatias</option>
+            <option>Giga - 8 fatias</option>
+            
+        </select></div>
+
+    <p style="display:none;">Preço: R$ <span id="preco"></span></p>
+
+    <div class="quantidade1">
+      <button class="botao1" onclick="menos()">-</button>
+      <span id="qtd" class="qt2">1</span>
+      <button class="botao1" onclick="mais()">+</button>
+    </div>
+<div class="botao0">
+    <h3 class="p-3">Total: R$ <span id="total"></span></h3>
+
+    <button class="botao2" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+</div>
+  </div>
+</div>
+ 
+
+ <div id="modal-teste1" class="modal-teste">
+   
+    
+
+  <div class="modal-content">
+
+    <button class="X-1" onclick="fechar1()">X</button>
+
+
+    <img id="img1" class="imgmodal2" width="120">
+
+    <div class="cardtext2"><h3 id="nome1" class="cardtext3"></h3>
+
+    <p id="desc1"></p></div>
+    <div class="caixa-30"> <label class="base0">Tamanho</label>
+        <select id="base1" class="base1">
+            <option>LATA</option>
+            <option>600 ml</option>
+            <option>2L</option>
+            
+        </select></div>
+
+    <p style="display:none;">Preço: R$ <span id="preco"></span></p>
+
+    <div class="quantidade1">
+      <button class="botao1" onclick="menos1()">-</button>
+      <span id="qtd1" class="qt2">1</span>
+      <button class="botao1" onclick="mais1()">+</button>
+    </div>
+<div class="botao0">
+    <h3 class="p-3">Total: R$ <span id="total1"></span></h3>
+
+    <button onclick="adicionarCarrinho()" class="botao2" >Adicionar ao Carrinho</button>
+</div>
+  </div>
+</div>
+ 
+
+<div id="modal-teste2" class="modal-teste">
+   
+    
+
+  <div class="modal-content">
+
+    <button class="X-1" onclick="fechar2()">X</button>
+
+
+    <img id="img2" class="imgmodal2" width="120">
+
+    <div class="cardtext2"><h3 id="nome2" class="cardtext3"></h3>
+
+    <p id="desc2"></p></div>
+    
+        
+
+    <p style="display:none;">Preço: R$ <span id="preco"></span></p>
+
+    <div class="quantidade1">
+      <button class="botao1" onclick="menos2()">-</button>
+      <span id="qtd2" class="qt2">1</span>
+      <button class="botao1" onclick="mais2()">+</button>
+    
+
+
+    <button class="botao2" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+</div>
+</div>
+</div>
+ 
+<div id="modal-teste3" class="modal-teste">
+   
+    
+
+  <div class="modal-content">
+
+    <button class="X-1" onclick="fechar3()">X</button>
+
+
+    <img id="img3" class="imgmodal2" width="120">
+
+    <div class="cardtext2"><h3 id="nome3" class="cardtext3"></h3>
+        <p id="preco3"> </p>
+
+    <p id="desc3"></p></div>
+    <div class="caixa-30"> <label class="base0">Tamanho</label>
+        <select id="base2" class="base1">
+            <option>Lata</option>
+            <option>Long Neck</option>
+            
+        </select></div>
+
+
+    <div class="quantidade1">
+      <button class="botao1" onclick="menos3()">-</button>
+      <span id="qtd3" class="qt2">1</span>
+      <button class="botao1" onclick="mais3()">+</button>
+    
+
+
+
+    <button class="botao2" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+</div>
+  </div>
+</div>
+
+<div id="modal-teste0" class="modal-teste">
+   
+    
+
+  <div class="modal-content">
+
+    <button class="X-1" onclick="fechar0()">X</button>
+
+
+    <img id="img0" class="imgmodal2" width="120">
+    
+
+    <div class="cardtext2"><h3 id="nome0" class="cardtext3"></h3>
+  <div> <p id="preco0" class="preco0"></p></div>
+    <p id="desc0"></p></div>
+
+
+
+    <div class="quantidade1">
+      <button class="botao1" onclick="menos0()">-</button>
+      <span id="qtd0" class="qt2">1</span>
+      <button class="botao1" onclick="mais0()">+</button>
+    
+
+
+
+    <button class="botao2" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div id="modal-carrinho" class="secao">
+     <h2 class="h1-2">Confirme seu Pedido</h2>
+
+ <div class="modalcarrinho">
+    
+    <div id="conteudo-carrinho" class="conteudocarrinho">
+        "<div class='card2'>  
+            <img width = 120 > 
+            <div class= 'porta3'> 
+                <h3 > </h3> 
+                <p class='p-2'></p><p class='p-2'></p>
+                 <button class='remover' onclick='removerCarrinho(0)'> Remover  </button></div> + </div>
+
+ 
+    </div>
+
+    <div class="totalcarrinho">
+        <h3 class="h3-3">Entrega Desejada</h3>
+
+        <div class="entrega">
+        
+           <label><input type="radio" name="entrega1"  onclick="mostrarSubsecao('delivery')"> Delivery</label>
+         <div id="delivery" class="subsecoes"> <p class="p-5">Endereço Principal</p>
+
+        <p>xxxxxxxxxxxx</p>
+
+        </div>
+        
+
+        
+
+        
+            <label><input type="radio" name="entrega1" onclick="mostrarSubsecao('buscar')"> Buscar Na Loja </label>
+             <div id="buscar" class="subsecoes"><p class="p-5">Endereço Principal</p>
+
+        <p>xxxxxxxxxxxx</p>
+
+        </div>
+        
+        
+        </div>
+
+        <div class="horario"><h3 class="p-5">Horario de Entrega</h3>
+
+        <label>
+            <input type="radio" name="entrega" > Pedir Mais Tarde</label>
+        
+        <label>
+            <input type="radio" name="entrega" > Pedir Agora</label></div>
+            
+                <h3 class="h3-3">Cupom de Desconto</h3>
+                 <div class="cupom">
+                <textarea class="texta1" placeholder="Digite o Cupom"></textarea>
+                <button class="aplicar1">Aplicar</button></div>
+                <div class="sub"><p>SubTotal: R$</p>
+                <p>Você economizou: R$:</p>
+                   <p class="p-4">Total:R$<span id="total-carrinho"></span></p>
+                   <button class="adicionar">Adicionar mais Itens</button>
+                   <button class="pagamento">Ir para Pagamento</button>
+            </div>
+        
+        
+        
+        
+ </div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div id="promoçoes" class="secao">
+        
+        <div class="caixa-11"><img src="fundpromo.webp" width="1100" height="500" ></div>
+        <div class="caixa-12">
+         <p>Possui um cupom ? Adicione Aqui</p>
+         <div class="linkar14"><textarea  class="linkar16"placeholder="Digite o Cupom"></textarea><button class="linkar15">APLICAR</button> </div>   </div>
+ 
+ 
+ 
+          <div class="caixa-promo"><div class="caixa-13">
+  <div class="linkar17"><button class="linkar18"> <img src="promo1.webp" width="250" height="250"></button>
+    <button class="linkar19">Apartir de R$:xxxx</button></div>
+  <div class="linkar17"><button class="linkar18"> <img src="promo2.webp" width ="250" height="250"></button>
+ <button class="linkar19">Apartir de R$:xxxx </button></div>
+ <div class="linkar17"><button class="linkar18"><img src="promo3.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div>
+ <div class="linkar17"><button class="linkar18"> <img src="promo4.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div></div>
+
+
+<div class="caixa-13">
+  <div class="linkar17"><button class="linkar18"> <img src="promo5.webp" width="250" height="250"></button>
+    <button class="linkar19">Apartir de R$:xxxx</button></div>
+  <div class="linkar17"><button class="linkar18"> <img src="promo6.webp" width ="250" height="250"></button>
+ <button class="linkar19">Apartir de R$:xxxx </button></div>
+ <div class="linkar17"><button class="linkar18"><img src="promo7.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div>
+ <div class="linkar17"><button class="linkar18"> <img src="prmo8.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div>
+</div>
+    
+
+
+
+
+<div class="caixa-13">
+  <div class="linkar17"><button class="linkar18"> <img src="promo9.webp" width="250" height="250"></button>
+    <button class="linkar19">Apartir de R$:xxxx</button></div>
+  <div class="linkar17"><button class="linkar18"> <img src="promo10.webp" width ="250" height="250"></button>
+ <button class="linkar19">Apartir de R$:xxxx </button></div>
+ <div class="linkar17"><button class="linkar18"><img src="promo11.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div>
+ <div class="linkar17"><button class="linkar18"> <img src="promo12.webp" width="250" height="250"></button>
+<button class="linkar19">Apartir de R$:xxxx</button></div>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <div id="modal" class="modal">
+         <div id="registrationForm">
+        <div class="janela">
+            <button class="x" onclick="fecharModal()"> x </button>
+            <h2>Por favor,Cadastre-se para receber produtos e promoções</h2><br>
+          <div class="formulario"> <div class="janela1"><label class="linkar7">Nome do endereço
+                <textarea class="text1"></textarea></label><br>
+                <label class="linkar7">Endereço
+                <textarea class="text1"></textarea></label><br>
+                <label class="linkar7" > Número
+                <textarea class="text1"></textarea></label><br>
+                <label class="linkar7"> Cidade
+                <textarea class="text1"></textarea></label><br></div>
+                <div class="janela2"><label class="linkar7"> CEP
+                <textarea class="text1"></textarea> </label><br>
+                <label class="linkar7"> Bairro
+                <textarea class="text1"></textarea></label><br>
+                <label class="linkar7"> Complemento
+                <textarea class="text1"></textarea></label><br>
+                <label class="linkar7"> Estado
+                <textarea class="text1"></textarea></label>
+                
+            <br><br>
+            
+        </div></div>
+        <div>
+            <button class="salvar" onclick="salvarSucesso()"> Salvar </button>
+        
+
+            <div> <button class="preencher" onclick="fecharModal()"> Preencher depois</button></div>
+             
+             </div>
+            </div>
+        </div>
+        <p id="successMessage" class="success-text"> Registrado com sucesso !</p>
+    </div>
+    
+<div class="caixa-3">
+  
+
+    
+    <div class="caixa-4"><img src="Domino2.svg" alt = "fec">
+    <p class="linkar8">Acompanhe a Domino's nas Redes Socias</p>
+<img src = "insta.svg" alt="insta">
+<img src ="x.svg" alt =" X"></div>
+<div class="caixa-5"><ul><h2>Sobre Nós </h2>
+<li><a class="linkar5" href="inter.html"> Internacional</a></li>
+<li><a class="linkar5" href="sobre.html"> Sobre a Pizza</a></li>
+<lI><a class="linkar5" href="politicas.html"> Politicas de Privacidade</a></lI>
+<li><a class="linkar5" href="cookie.html"> Politicas de Cookies</a></li></ul><div>
+<ul><h2>Atendimento ao cliente</h2>
+<li><a class="linkar5" href="seja.html"> Seja Um Franqueado</a></li>
+<li><a class="linkar5" href="fale.html"> Fale conosco</a></li>
+<li><a class="linkar5" href="termos.html"> Termos de uso</a></li></ul></div></div>
+<div class ="caixa-6"><img src="icon-google-play.svg">
+<img src = "icon-apple.svg" ></div></div>
+<div class="caixa-7"><p>Serviço disponível nas áreas de entrega Domino´s Pizza, todos os dias, de acordo com o horário de funcionamento de cada loja. A Domino´s Pizza Brasil se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. As formas de pagamento variam de acordo com cada loja. Imagens meramente ilustrativas. Consulte se sua loja de preferência pratica a promoção escolhida Em caso de dúvidas, consulte nosso SAC: relacionamento@dominos.com.br.<br>
+
+*Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.<br>
+
+S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: relacionamento@dominos.com.br<br>
+
+Informações sobre o uso de dados pessoais e pedidos de descadastro do banco de dados, clique aqui - Encarregado de Dados
+</p>
+
+<div class="caixa-9"><img src="reclameaqui2.svg">
+ <div class="caixa-8"><p>Verificado por Reclame aqui</p>
+    <img src="reclamaaqui.svg"></div> </div> </div>
+    <p class="linkar6">Dominos's Pizza Brasil, Av. das Américas, 500 - Bloco 7 – 3º andar – Barra da Tijuca, Rio de Janeiro/RJ - 22640-100</p>
+
+
+
+
+
+
+
+
+
+    </body>
+    <script src="scripts.js">
+
+    </script>
+</html>
