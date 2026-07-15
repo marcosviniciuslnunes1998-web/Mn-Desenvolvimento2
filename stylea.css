@@ -124,7 +124,7 @@ body {
       color:black;
 }
 .caixa-4{
-    width:30%;
+    width:35%;
     align-items:center;
     justify-content: column;
     color:black;
@@ -370,6 +370,7 @@ ul {
 .linkar8 {
     color:#0090E2;
     white-space: nowrap;
+    margin-right:20px;
 }
 .linkar9 {
     background:red;
