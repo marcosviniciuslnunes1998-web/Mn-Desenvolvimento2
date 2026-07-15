@@ -546,7 +546,7 @@ function fechar0(){
     })
 
 function removerCarrinho(i){
-  console.log("Recebi:", i);
+
   conteudocarrinho.innerHTML= "";
   carrinho.splice(i,1);
  
